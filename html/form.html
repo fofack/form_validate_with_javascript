@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Formulaire de contact</h2>
+        </div>
+        <form id="form" class="form" action="form.php" method="POST">
+            <div class="form-control">
+                <label for="nom">Nom</label>
+                <input type="text" placeholder="Nom" id="nom" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="prenom">Prenom</label>
+                <input type="text" placeholder="Prenom" id="prenom" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="numero">Numero</label>
+                <input type="text" placeholder="Numero" id="numero" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="E-mail" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="pays">Pays</label>
+                <select id="pays" name="pays">
+                    <option value="cameroun">Cameroun</option>
+                    <option value="gabon">Gabon</option>
+                    <option value="guinee">Guinee Equatoriale</option>
+                    <option value="centrafrique">Republique Centrafricaine</option>
+                    <option value="congo">RD Congo</option>
+                    <option value="tchad">Tchad</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="sexe">Sexe</label><br>
+                M<input type="radio" id="male" name="sexe" value="m" checked>
+                F<input type="radio" id="femme" name="sexe" value="f">
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    </div><script src="../js/main.js"></script>
+</body>
+</html>
